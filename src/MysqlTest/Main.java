@@ -91,6 +91,7 @@ public class Main {
         return false;
     }
 
+    //插入学生信息
     public boolean deleteStudent(int nn) {
         int i=0;
 
@@ -106,6 +107,7 @@ public class Main {
         return false;
     }
 
+    //更新学生信息
     public boolean updateStudent(String name,int age){
         String sqlUpdate=String.format("update user set `age`= ? where `name`= ?",age,name);
         try {

@@ -23,6 +23,7 @@ public class Test {
         Main main = new Main();
         coon = main.dBConnection();
 
+        // 插入测试
         /*Student student = new Student(6, "www", 88, "男", 23);
         if (main.insertStudent(student)) {
             System.out.println("插入成功");
@@ -30,18 +31,20 @@ public class Test {
             System.out.println("插入失败");
         }*/
 
+        //删除测试
       /* if(main.deleteStudent("6")){
             System.out.println("删除成功");
        }else{
            System.out.println("删除失败");
        }*/
 
+      //更新测试
       if(main.updateStudent("www",10)){
           System.out.println("更新成功");
       }else {
           System.out.println("更新失败");
       }
-
+      //遍历数据库
         List<Student> studentList = main.selectAllStudent();
         for (Student stu : studentList) {
             System.out.println(stu.toString());
